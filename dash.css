@@ -1,0 +1,172 @@
+*{
+    padding: 0;
+    margin: 0;
+    color:white;
+     font-family: sans-serif;
+}
+body{
+    background-color: rgb(50, 47, 47);
+    display: flex;
+}
+.img-box{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    overflow: hidden;
+    border:3px solid white;
+    flex-shrink: 0;
+ }
+.img-box img{
+    width: 100%;
+     
+}
+.profile{
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+.profile h2{
+    font-size: 20px;
+    text-transform: capitalize;
+}
+.menu{
+    background-color: rgb(4, 4, 42);
+    width: 50px;
+    height: 100vh;
+    padding: 20px;
+    overflow: hidden;
+    transition: .5s;
+
+}
+.menu:hover{
+    width: 260px;
+}
+
+
+ul{
+    list-style: none;
+    position: relative;
+    height: 95%;
+}
+.da{  
+    display: block;
+    text-decoration: none;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    transition: .5s;
+}
+  
+ul li a:hover{
+    background-color:#ffffff55;
+}
+.log-out{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+
+}
+.log-out a{
+    background-color: rgb(147, 27, 27);
+}
+.da{
+    font-size: 20px;
+    
+}
+.content{
+    width: 100%;
+    margin: 10px;;
+}
+.title-info{
+    background-color:rgb(98, 98, 247);
+     
+    padding: 10px; 
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 8px;
+    margin:10px 0;
+
+}
+.data-info{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 10px;
+
+}
+.data-info .box{
+   background-color: rgb(3, 3, 49);
+   color: antiquewhite;
+    height: 250px;
+    flex-basis: 250px;
+    flex-grow: 1;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+
+
+}
+.data-info .box i{
+    font-size: 30px;
+
+}
+.data-info .box .data{
+    text-align: center;
+}
+.data-info .box .data span{
+    font-size: 30px;
+}
+table{
+    width: 100%;
+    text-align: center;
+    border-spacing: 8px;
+
+}
+td, th{
+    background-color: rgb(3, 3, 49);
+    height: 40px;
+    border-radius: 8px;
+}
+th{
+    background-color: rgb(78, 75, 75);
+}
+.price{
+    padding: 6px;
+    border-radius: 6px;
+    background-color: green;
+}
+.count{
+    padding: 6px;
+    border-radius: 6px;
+    background-color:gold;
+    color: black;
+}
+.chart{
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 20px;
+}
+.container {
+    max-width: 600px; /* تقليل حجم المخطط */
+    margin: auto;
+}
+.chart {
+    display: flex;
+    justify-content: center;
+    padding: 15px; /* إضافة مساحة داخلية */
+    border: 2px solid #333; /* إضافة إطار حول المخطط */
+    border-radius: 10px; /* جعل الزوايا مستديرة */
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.1); /* إضافة ظل خفيف */
+    background-color: #f9f9f9; /* خلفية خفيفة */
+}
+canvas {
+    max-width: 100%;
+    height: auto;
+}
